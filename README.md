@@ -14,3 +14,7 @@ pip install -r requirements.txt
 python manage.py migrate
 
 python manage.py runserver
+
+## Video presentation
+
+https://youtu.be/Im7Nd_LdA5c

@@ -39,7 +39,7 @@ def train_model():
 
     # Training the model
     # epoch - running all the data through the network one time
-    epochs = 350
+    epochs = 400
     losses = []
     for i in range(epochs):
         # Go forward and get a prediction
