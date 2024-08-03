@@ -22,11 +22,11 @@ def crop_data(request):
             data = evaluate([temperature, humidity, ph_level, soil_moisture, nitrogen_level, phosphorus_level, altitude])
             crop = ''
             if data == 0:
-                crop = 'corn'
+                crop = 'Corn'
             elif data == 1:
-                crop = 'soybean'
+                crop = 'Soybean'
             elif data == 2:
-                crop = 'wheat'
+                crop = 'Wheat'
 
             context = {'data': crop}
 

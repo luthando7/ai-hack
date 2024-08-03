@@ -39,7 +39,7 @@ def train_model():
 
     # Training the model
     # epoch - running all the data through the network one time
-    epochs = 400
+    epochs = 200
     losses = []
     for i in range(epochs):
         # Go forward and get a prediction
@@ -97,6 +97,7 @@ def sanitise_data(df):
     df['soil_type'] = df['soil_type'].replace('sandy', 1.0)
     df['soil_type'] = df['soil_type'].replace('loamy', 2.0)
 
+    # Dropping these values
     X = df.drop([
         'sensor_id',
         'potassium_level', 'location_latitude', 'location_longitude', 'location_longitude',
@@ -111,6 +112,7 @@ def evaluate(data: list):
     new_crop = torch.tensor(data)
     with torch.no_grad():
         prediction = model(new_crop)
+        print("PREDICTION", prediction)
         return prediction.argmax().item()
 
 

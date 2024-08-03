@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class Model(nn.Module):
-    def __init__(self, in_features=7, h1=7, h2=8, h3=8, out_features=3) -> None:
+    def __init__(self, in_features=7, h1=8, h2=8, h3=8, out_features=3) -> None:
         super().__init__()
         self.fc1 = nn.Linear(in_features, h1)
         self.fc2 = nn.Linear(h1, h2)

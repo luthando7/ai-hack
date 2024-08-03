@@ -46,7 +46,125 @@ button {
 
 <body>  
 
-<h1>The best crop for the condition is:</h1>
-    <p>{{ data }}</p>
+<h1>The best crop for the condition is: {{ data }}</h1>
+    {% if data == 'Corn' %}
+        <h3>Planting Corn</h3>
+        <p>
+            Timing: Plant corn after winter when soil temperatures reach 15°C.
+            <br>
+            Spacing: Plant corn in blocks or rows, not single lines, to improve pollination. Space seeds 20-30 cm apart within rows and rows 1 m apart.
+            <br>
+            Depth: Plant seeds 3-5 cm deep.
+            <br>
+            Watering: Water thoroughly after planting and keep the soil consistently moist.
+            <br>
+            
+        </p>
+        <h4>Corn Care</h4>
+        <p>
+            Watering: Corn is a thirsty plant. Provide consistent moisture, especially during silking and kernel development.
+            <br>
+            Fertilizing: Corn is a heavy feeder. Apply a balanced fertilizer when plants reach knee-high and again when tasseling begins.
+            <br>
+            Weeding: Keep the area around corn plants weed-free to prevent competition for nutrients and water.
+            <br>
+            Pest and Disease Control: Monitor for pests like corn borers, aphids, and diseases like corn smut. Use appropriate control methods if necessary.
+            <br>
+            Support: Tall corn varieties may require staking or support to prevent lodging.
+            Harvesting Corn
+            <br>
+            Timing: Corn is ready for harvest when the silks are brown and dry, and the kernels are full and plump.
+            <br>
+            Method: Harvest corn by pulling the ear from the stalk.
+            <br>
+            Storage: Corn is best eaten fresh but can be frozen or canned for later use.
+            <br>
+        </p>
+        <h4>Additional Tips</h4>
+        <p>
+            Succession Planting: Plant corn in multiple batches to extend the harvest season.
+            <br>
+            Crop Rotation: Rotate corn with other crops to prevent soil-borne diseases.
+            <br>
+            Companion Planting: Consider planting beans or squash near corn for added benefits.
+            <br>
+            Remember: Corn is a wind-pollinated crop, so planting in blocks will increase pollination and yield. Consistent care and attention will reward you with a delicious harvest.
+        </p>
+    {% elif data == 'Soybean' %}
+        <h3>Planting Soybean</h3>
+        <p>
+            Sun: Soybeans prefer full sun.
+            <br>
+            Soil: They thrive in well-drained, fertile soil with a pH of 6.0 to 6.8. Incorporate organic matter for improved soil structure.
+            <br>
+            Tillage: Prepare the soil to a depth of 10-15 cm to ensure proper seed-to-soil contact.
+            <br>
+            Timing: Plant soybeans after the last frost when soil temperatures reach 15°C.
+            <br>
+            Spacing: Plant seeds 3-5 cm deep and 7-10 cm apart. Row spacing typically ranges from 40 to 80 cm.
+            <br>
+            Seed Treatment: Consider treating seeds with inoculant to improve nitrogen fixation.
+        </p>
+        <h4>Soybean Care</h4>
+        <p> 
+            Watering: Soybeans require consistent moisture, especially during flowering and pod development.
+            <br>
+            Fertilization: While soybeans can fix their own nitrogen, additional phosphorus and potassium may be necessary based on soil tests.
+            <br>
+            Weed Control: Keep the field free of weeds, especially during the early stages of growth.
+            <br>
+            Pest and Disease Management: Monitor for common soybean pests and diseases and take appropriate control measures.
+            <br>
+            Support: Soybeans generally don't require staking, but tall varieties may benefit from support in windy conditions.
+            Harvesting Soybeans
+            <br>
+            Timing: Harvest soybeans when the leaves turn yellow and the pods become dry and brown.
+            <br>
+            Method: Combine harvesting or handpicking can be used depending on the scale of production.
+        </p>
+        <h4>Additional Tips</h4>
+        <p>
+            <br>
+            Crop Rotation: Rotate soybeans with other crops to improve soil health and reduce disease build-up.
+            <br>
+            Cover Crop: Consider planting a cover crop after soybean harvest to protect the soil and add organic matter.
+        </p>
+    {% elif data == 'Wheat' %}
+        <h3>Planting Wheat</h3>
+        <p>
+            Sun: Wheat thrives in full sun.
+            <br>
+            Soil: Well-drained, fertile soil with a pH of 6.0 to 7.0 is ideal. Incorporate organic matter for improved soil structure.
+            <br>
+            Tillage: Prepare the soil to a depth of 15-20 cm for optimal seed-to-soil contact.
+            <br>
+            Timing: Plant winter wheat in autumn, several weeks before winter. Plant spring wheat as soon as the ground can be worked in spring.
+            <br>
+            Spacing: Broadcast or drill seeds at the recommended seeding rate for your variety.
+            <br>
+            Depth: Plant seeds 3-5 cm deep.
+        </p>
+        <h4>Wheat Care</h4>
+        <p>
+            Watering: Wheat is relatively drought-tolerant, but regular moisture is essential for germination and early growth.
+            <br>
+            Fertilization: Apply a balanced fertilizer before planting or as a top dressing during the growing season.
+            <br>
+            Weed Control: Keep the field free of weeds, especially during the early stages of growth.
+            <br>
+            Pest and Disease Management: Monitor for common wheat pests and diseases and take appropriate control measures.
+            Harvesting Wheat
+            <br>
+            Timing: Harvest wheat when the grain is fully mature and the moisture content is suitable for storage.
+            <br>
+            Method: Combine harvesting is commonly used for large-scale production.
+        </p>
+        <h4>Additional Tips</h4>
+        <p>
+            Crop Rotation: Rotate wheat with other crops to improve soil health and reduce disease build-up.
+            <br>
+            Cover Crop: Consider planting a cover crop after wheat harvest to protect the soil and add organic matter.
+        </p>
+    {% endif %}
 </body>
 </html>
