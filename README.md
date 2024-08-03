@@ -34,6 +34,7 @@ pip install -r requirements.txt
 python manage.py migrate
 
 # Running the application
+cd terraplan
 python manage.py runserver
 ```
 The site will be on http://127.0.0.1:8000
